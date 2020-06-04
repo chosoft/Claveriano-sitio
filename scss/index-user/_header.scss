@@ -1,0 +1,146 @@
+$color1: #6200ee;
+$color2: #3700b3;
+$color3: #03dac5;
+$font1: 'Montserrat', sans-serif;
+$font2: 'Arimo',sans-serif;
+header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background: $color1;
+    padding: 0;
+    margin: 0;
+    font-family: $font1;
+    .wp-nav{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .wd-header{
+            width: auto;
+        }
+        .logo{
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            img{
+                height: 70px;
+                width: 70px;
+                margin-top: 3px;
+            }
+            .logo-title{
+                font-size: 40px;
+                width: auto;
+                margin-top: 15px;
+                color: #fff;
+                font-weight: 100;
+                font-family: $font1;
+                text-transform: capitalize;
+            }
+        }
+        .wp-nav{
+            .wp-btn-op{
+                display: none;
+                img{
+                    width:25px
+                }
+
+            }
+            nav{
+                width: 100%;
+                margin-top: 5px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                a{
+                    display: inline-block;
+                    margin-right: 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 20px;
+                    padding: 12px 20px;
+                    text-transform: capitalize;
+                    transition:all 0.3s ease;
+                    cursor: pointer;
+                    &:hover{
+                        color: rgba($color: #fff, $alpha: 0.8);
+                    }
+                }
+                .perfil{
+                    background: none;
+                    padding: 9px 30px;
+                    border: 3px solid #fff;
+                    color: #fff;
+                    transition: all .3s ease;
+                    border-radius: 20px;
+                    &:hover{
+                        box-shadow: 0 0px 30px 1px #fff;
+                        color: #fff !important;
+                    }
+                }
+                .salir{
+                    background: $color3;
+                    padding: 12px 35px;
+                    color: #fff;
+                    transition: all 0.3s ease;
+                    border-radius: 20px;
+                    &:hover{
+                        box-shadow: 0 0px 30px 1px $color3;
+                        color: #fff !important;
+                    }
+                }
+
+            }
+        }
+    }
+}
+#lol{
+    display:none;
+}
+@media screen and (max-width: 1200px){
+    header{
+        .wp-nav{
+            .wp-nav{
+                .wp-btn-op{
+                    display: block;
+                    margin:auto
+                }
+                nav{
+                    display: none;
+                }
+            }
+            #lol{
+                width: 100%;
+                display: none;
+                flex-direction: column;
+                border-top: 2px solid #fff;
+                padding:15px;
+                a{
+                    display: inline-block;
+                    padding:15px 20px;
+                    width: 100%;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                #salir-xd{
+                    background: #03dac5;
+                }
+                #perfil-xd{
+                    border: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    #lolTl{
+        font-size: 0;
+    }
+}

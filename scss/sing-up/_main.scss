@@ -1,0 +1,190 @@
+$color1: #6200ee;
+$color2: #3700b3;
+$color3: #03dac5;
+$font1: 'Montserrat', sans-serif;
+$font2: 'Arimo',sans-serif;
+
+main{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    .wp-form{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        form{
+            width: 28%;
+            height: auto;
+            background: #fff;
+            padding: 0;
+            font-family: $font1;
+            box-shadow: 0 0px 30px 1px rgba($color: #000000, $alpha: .5);
+            margin: 0;
+            margin-top: 50px;
+            .wp-title{
+                width: 100%;
+                height: auto;
+                padding: 15px 20px;
+                background: $color1;
+                h1{
+                    font-size: 45px;
+                    font-family: $font1;
+                    font-weight: 100;
+                    text-transform: capitalize;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+            .wp-inputs{
+                width: 100%;
+                height: auto;
+                padding: 50px;
+                padding-top: 30px;
+                padding-bottom: 20px;
+                .inputs{
+                    width: 100%;
+                    font-size: 20px;
+                    font-family: $font2;
+                    padding: 12px;
+                    border-radius: 20px;
+                    border: none;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    border: 2px solid rgba($color: grey, $alpha: 0.5);
+                    transition: all 0.3s ease;
+                    &:focus{
+                        outline: none;
+                        box-shadow: 0 0px 30px 0.5px rgba($color: $color2, $alpha: 0.4);
+                    }
+                }
+                .label{
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    color: $color2;
+                }
+                .pws{
+                    font-size: 25px;
+                    padding: 9px 12px;
+                }
+                
+            }
+            .wp-radios{
+                padding: 50px;
+                padding-top: 0px;
+                width: 100%;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                height: auto;
+                .radio{
+                    display: none;
+                }
+                .label-radio{
+                    width: 49.5%;
+                    background: $color3;
+                    padding: 15px 20px;
+                    color: #fff;
+                    text-transform: capitalize;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    font-size: 20px;
+                    font-family: $font1;
+                    &:hover{
+                        box-shadow: 0 0px 30px 1px rgba($color: $color3, $alpha: 0.5);
+                    }
+                }
+                .s1{
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+                .s2{
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+
+                }
+            }
+            .wp-submit{
+                width: 100%;
+                height: auto;
+                padding: 50px;
+                padding-top: 0px;
+                padding-bottom: 30px;
+                .submit{
+                    width: 100%;
+                    height: auto;
+                    padding: 15px 20px;
+                    font-size: 20px;
+                    color: #fff;
+                    background: $color1;
+                    transition: all 0.3s ease;
+                    border: none;
+                    &:hover{
+                        box-shadow: 0 0px 30px 0.5px rgba($color: $color2, $alpha: 0.5);
+                    }
+                }
+            }
+            .wp-login{
+                width: 100%;
+                padding: 50px;
+                padding-top: 0px;
+                padding-bottom: 30px;
+                span{
+                    width: 100%;
+                    height: auto;
+                    a{
+                        color: $color2;
+                        font-size: 15px;
+                        text-transform: capitalize;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            text-shadow:2px 2px 8px rgba($color: $color2, $alpha: 0.5) ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1600px){
+    #formAct{
+        width: 40%;
+    }
+}
+@media screen and (max-width:1200px){
+    #formAct{
+        width: 50%;
+    }
+}
+@media screen and (max-width:900px){
+    #formAct{
+        width: 70%;
+    }
+}
+@media screen and (max-width:600px){
+    #formAct{
+        width: 100%;
+        .wp-title{
+            h1{
+                font-size: 35px;
+            }
+        }
+        .wp-inputs{
+            padding: 20px;
+            padding-top: 50px;
+        }
+        .wp-submit{
+            padding: 20px;
+        }
+        .wp-radios{
+            padding: 20px;
+        }
+    }
+}

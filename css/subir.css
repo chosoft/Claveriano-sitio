@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url("../logo.png") fixed no-repeat center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.space {
+  height: 150px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background: #6200ee;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+header .wp-nav {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .wp-nav .wd-header {
+  width: auto;
+}
+header .wp-nav .logo {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header .wp-nav .logo img {
+  height: 70px;
+  width: 70px;
+  margin-top: 3px;
+}
+header .wp-nav .logo .logo-title {
+  font-size: 40px;
+  width: auto;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+header .wp-nav .wp-nav .wp-btn-op {
+  display: none;
+}
+header .wp-nav .wp-nav .wp-btn-op img {
+  width: 25px;
+}
+header .wp-nav .wp-nav nav {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+header .wp-nav .wp-nav nav a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px 20px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header .wp-nav .wp-nav nav a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+header .wp-nav .wp-nav nav .perfil {
+  background: none;
+  padding: 9px 30px;
+  border: 3px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+header .wp-nav .wp-nav nav .perfil:hover {
+  box-shadow: 0 0px 30px 1px #fff;
+  color: #fff !important;
+}
+header .wp-nav .wp-nav nav .salir {
+  background: #03dac5;
+  padding: 12px 35px;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+header .wp-nav .wp-nav nav .salir:hover {
+  box-shadow: 0 0px 30px 1px #03dac5;
+  color: #fff !important;
+}
+
+#lol {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  header .wp-nav .wp-nav .wp-btn-op {
+    display: block;
+    margin: auto;
+  }
+  header .wp-nav .wp-nav nav {
+    display: none;
+  }
+  header .wp-nav #lol {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border-top: 2px solid #fff;
+    padding: 15px;
+  }
+  header .wp-nav #lol a {
+    display: inline-block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+  }
+  header .wp-nav #lol #salir-xd {
+    background: #03dac5;
+  }
+  header .wp-nav #lol #perfil-xd {
+    border: 2px solid #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  #lolTl {
+    font-size: 0;
+  }
+}
+main {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+main .wp-form {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .wp-form form {
+  width: 28%;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 0px 30px 1px rgba(0, 0, 0, 0.5);
+  margin-top: 60px;
+}
+main .wp-form form .wp-title {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: #6200ee;
+}
+main .wp-form form .wp-title .title-form {
+  color: #fff;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-transform: capitalize;
+  text-align: center;
+}
+main .wp-form form .wp-file-wds {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+main .wp-form form .wp-file-wds #archivo {
+  display: none;
+}
+main .wp-form form .wp-file-wds .hd {
+  width: none;
+  height: none;
+  display: none;
+  position: absolute;
+}
+main .wp-form form .wp-file-wds #lb-file {
+  width: 100%;
+  text-transform: capitalize;
+  background: #6200ee;
+  padding: 15px 20px;
+  margin-right: 5px;
+  text-align: center;
+  color: #fff;
+}
+main .wp-form form .wp-file-info {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 0;
+}
+main .wp-form form .wp-file-info #info {
+  width: 100%;
+  color: #3700b3;
+}
+main .wp-form form .wp-coment {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+main .wp-form form .wp-coment .wp-tl-cmt {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+main .wp-form form .wp-coment .wp-tl-cmt h2 {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+main .wp-form form .wp-coment .wp-comt-wd textarea {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 20px;
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  max-height: 200px;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+  letter-spacing: 0.5px;
+  min-height: 100px;
+}
+main .wp-form form .wp-coment .wp-comt-wd textarea:focus {
+  outline: none;
+  box-shadow: 0 0px 30px 0.5px rgba(55, 0, 179, 0.4);
+}
+main .wp-form form .btn {
+  width: 100%;
+  padding: 50px;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+main .wp-form form .btn .sb {
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  background: #6200ee;
+  transition: all 0.3s ease;
+}
+main .wp-form form .btn .sb:hover {
+  box-shadow: 0 0px 30px 0.5px rgba(55, 0, 179, 0.5);
+}
+main .wp-form form .btn .sb:focus {
+  outline: none;
+}
+main .wp-form form .btn .sb:active {
+  background: #3700b3;
+}
+
+@media screen and (max-width: 1600px) {
+  #formAct {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #formAct {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #formAct {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #formAct {
+    width: 100%;
+  }
+  #formAct .wp-title h1 {
+    font-size: 35px;
+  }
+  #formAct .wp-inputs {
+    padding: 20px;
+    padding-top: 50px;
+  }
+  #formAct .wp-submit {
+    padding: 20px;
+  }
+  #formAct .wp-radios {
+    padding: 20px;
+  }
+}

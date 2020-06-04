@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^noticias/([a-zA-Z]+) noticias.php?type=$1
+RewriteRule ^registrarse/ sing-up.php
+RewriteRule ^ingresar/ sing-in.php
+RewriteRule ^home/ index-user.php
+RewriteRule ^salir/ logica/salir.php
+RewriteRule ^usuario/([a-zA-Z0-9]+) user-account.php?id=$1
+RewriteRule ^yo/([a-zA-Z0-9]+) perfil.php?id=$1
+RewriteRule ^eliminar/ logica/proceso_eliminar.php
+RewriteRule ^img/ subir.php

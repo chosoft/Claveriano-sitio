@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url("../logo.png") fixed no-repeat center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.space {
+  height: 150px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background: #6200ee;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+header .wp-nav {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .wp-nav .wd-header {
+  width: auto;
+}
+header .wp-nav .logo {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header .wp-nav .logo img {
+  height: 70px;
+  width: 70px;
+  margin-top: 3px;
+}
+header .wp-nav .logo .logo-title {
+  font-size: 40px;
+  width: auto;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+header .wp-nav .wp-nav .wp-btn-op {
+  display: none;
+}
+header .wp-nav .wp-nav .wp-btn-op img {
+  width: 25px;
+}
+header .wp-nav .wp-nav nav {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+header .wp-nav .wp-nav nav a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px 20px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header .wp-nav .wp-nav nav a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+header .wp-nav .wp-nav nav .perfil {
+  background: none;
+  padding: 9px 30px;
+  border: 3px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+header .wp-nav .wp-nav nav .perfil:hover {
+  box-shadow: 0 0px 30px 1px #fff;
+  color: #fff !important;
+}
+header .wp-nav .wp-nav nav .salir {
+  background: #03dac5;
+  padding: 12px 35px;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+header .wp-nav .wp-nav nav .salir:hover {
+  box-shadow: 0 0px 30px 1px #03dac5;
+  color: #fff !important;
+}
+
+#lol {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  header .wp-nav .wp-nav .wp-btn-op {
+    display: block;
+    margin: auto;
+  }
+  header .wp-nav .wp-nav nav {
+    display: none;
+  }
+  header .wp-nav #lol {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border-top: 2px solid #fff;
+    padding: 15px;
+  }
+  header .wp-nav #lol a {
+    display: inline-block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+  }
+  header .wp-nav #lol #salir-xd {
+    background: #03dac5;
+  }
+  header .wp-nav #lol #perfil-xd {
+    border: 2px solid #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  #lolTl {
+    font-size: 0;
+  }
+}
+main {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+main .wp-title-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+main .wp-title-main .main-tl {
+  font-size: 50px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+main .wp-posts {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+main .wp-posts .post {
+  width: 30%;
+  margin-top: 20px;
+  display: block;
+  margin: 10px auto 30px auto;
+  margin-bottom: 30px;
+  height: auto;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0px 30px 2px rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+main .wp-posts .post .wp-cont-post {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+main .wp-posts .post .wp-cont-post .wp-username {
+  width: 100%;
+  padding: 20px 15px;
+  height: auto;
+}
+main .wp-posts .post .wp-cont-post .wp-username span {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #3700b3;
+  font-weight: 100;
+  text-align: left;
+}
+main .wp-posts .post .wp-cont-post .wp-img {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+main .wp-posts .post .wp-cont-post .wp-img img {
+  width: 100%;
+  height: 500px;
+}
+main .wp-posts .post .wp-cont-post .wp-coment {
+  width: 100%;
+  height: auto;
+  padding: 20px 15px;
+}
+main .wp-posts .post .wp-cont-post .wp-coment .coment {
+  font-family: "Arimo", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 19px;
+}
+main .wp-posts .post .wp-cont-post .wp-coment .coment::first-letter {
+  text-transform: uppercase;
+}
+main .wp-posts .post .wp-cont-post .wp-num {
+  font-size: 15px;
+  color: rgba(55, 0, 179, 0.5);
+  font-weight: 100;
+  text-transform: capitalize;
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .wp-posts .post .wp-cont-post .wp-num .delete {
+  margin-right: 15px;
+  transition: all 0.3s ease;
+  color: #3700b3;
+}
+main .wp-posts .post .wp-cont-post .wp-num .delete:hover {
+  text-shadow: 2px 2px 8px rgba(55, 0, 179, 0.5);
+}
+
+@media screen and (max-width: 1500px) {
+  main .wp-posts .post {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .wp-posts .post {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .wp-posts .post {
+    width: 58%;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .wp-posts .post {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .wp-posts .post {
+    width: 100%;
+  }
+}

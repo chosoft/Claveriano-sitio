@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url("../logo.png") fixed no-repeat center;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.space {
+  height: 150px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background: #6200ee;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+header .wp-nav {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .wp-nav .wd-header {
+  width: auto;
+}
+header .wp-nav .logo {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header .wp-nav .logo img {
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin: auto;
+}
+header .wp-nav .logo .logo-title {
+  font-size: 0;
+  width: auto;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+header .wp-nav .wp-btn-op {
+  display: none;
+}
+header .wp-nav .wp-btn-op img {
+  width: 25px;
+}
+header .wp-nav .wp-nav nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+header .wp-nav .wp-nav nav a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px 20px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header .wp-nav .wp-nav nav a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+header .wp-nav .wp-nav nav .btn-user {
+  background: #03dac5;
+  border-radius: 20px;
+  padding: 9px 20px;
+  border: 3px solid transparent;
+}
+header .wp-nav .wp-nav nav .btn-user:hover {
+  box-shadow: 0 0px 30px 5px #03dac5;
+  color: #fff;
+}
+header .wp-nav .wp-nav nav #register {
+  background: none;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+}
+header .wp-nav .wp-nav nav #register:hover {
+  box-shadow: 0 0px 30px 1px #fff;
+  color: #fff;
+}
+
+#lol {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  header .wp-nav .wp-nav .wp-btn-op {
+    display: block;
+    margin: auto;
+  }
+  header .wp-nav .wp-nav nav {
+    display: none;
+  }
+  header .wp-nav #lol {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    border-top: 2px solid #fff;
+    padding: 15px;
+  }
+  header .wp-nav #lol a {
+    display: inline-block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+  }
+  header .wp-nav #lol .salir-xd {
+    background: #03dac5;
+  }
+  header .wp-nav #lol .perfil-xd {
+    border: 2px solid #fff;
+  }
+}
