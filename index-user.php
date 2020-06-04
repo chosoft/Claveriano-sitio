@@ -1,4 +1,5 @@
 <?php
+//verificamos si el usuario inicio sesion
 session_start();
 include('logica/conexion.php');
 $usuario = $_SESSION['username'];
@@ -50,6 +51,7 @@ if (!isset($usuario)) {
 <main class="post-container">
     <div class="wp-posts">
     <?php
+    //traemos todas las fotos y las mostramos
                  include("logica/conexion.php");
                  $query = "SELECT * FROM tb_imagenes order by id desc";
                  $resultado=$conexion->query($query);

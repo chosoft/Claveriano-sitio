@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php 
-
+//verificamos que tipo de usuario es para mostrar el menu de navegacion
 $a = $_GET['type'];
 
 if($a == 'log'){

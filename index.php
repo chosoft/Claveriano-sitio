@@ -36,6 +36,7 @@
 <main class="post-container">
     <div class="wp-posts">
     <?php
+    //traemos todas las imagens y las mostramos
                  include("logica/conexion.php");
                  $query = "SELECT * FROM tb_imagenes order by id desc";
                  $resultado=$conexion->query($query);

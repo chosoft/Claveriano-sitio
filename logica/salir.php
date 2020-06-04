@@ -4,4 +4,5 @@
     
     header("location: ../index.php");
     exit();
+    //este archivo solo cierra la sesion
 ?>

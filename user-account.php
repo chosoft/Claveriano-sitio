@@ -58,7 +58,7 @@ if (!isset($usuario)) {
     </div>
     <div class="wp-posts">
     <?php
-    
+    //traemos los datos del usuario al cual le hemos dado click
     $id_img = $_REQUEST['id'];
     $q = "SELECT tb_imagenes.id,tb_imagenes.nombre,tb_imagenes.img,tb_imagenes.comentario,tb_imagenes.id_user_public  FROM tb_imagenes INNER JOIN tb_users WHERE tb_users.id = '$id_us' AND tb_imagenes.id_user_public = '$id_img'  ORDER BY `tb_imagenes`.`id` DESC  ";
     $resul = mysqli_query($conexion,$q);

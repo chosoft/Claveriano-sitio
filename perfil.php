@@ -1,4 +1,5 @@
 <?php 
+//verificamos si el usuario inicio sesion
 
 session_start();
 include('logica/conexion.php');
@@ -57,6 +58,8 @@ if (!isset($usuario)) {
     </div>
     <div class="wp-posts">
     <?php
+
+    //traemos los datos del usuario que esta usando la plataforma
                  include("logica/conexion.php");
                  $q = "SELECT tb_imagenes.id,tb_imagenes.nombre,tb_imagenes.img,tb_imagenes.comentario,tb_imagenes.id_user_public FROM tb_imagenes INNER JOIN tb_users WHERE tb_users.id = '$id_us' AND tb_imagenes.id_user_public = '$id'  ORDER BY `tb_imagenes`.`id` DESC ";
                  $resultado= mysqli_query($conexion,$q);
